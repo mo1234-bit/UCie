@@ -341,7 +341,7 @@ module ucie_phy_top #(
    
     generate
         if (ENABLE_SIDEBAND) begin : gen_sideband
-            ucie_sideband_enhanced #(
+            ucie_sideband #(
                 .ENABLE_REDUNDANCY(ENABLE_REDUNDANCY)
             ) u_sideband (
                 .auxclk(auxclk),
@@ -375,7 +375,7 @@ module ucie_phy_top #(
     
     
     wire [MODULE_WIDTH-1:0] active_lane_mask;
-    ucie_ltsm_enhanced #(
+    ucie_ltsm #(
         .PACKAGE_TYPE(PACKAGE_TYPE),
         .MODULE_WIDTH(MODULE_WIDTH),
         .ENABLE_REDUNDANCY(ENABLE_REDUNDANCY)
@@ -434,5 +434,6 @@ module ucie_phy_top #(
     assign status_tx_packets = tx_packet_counter;
     assign status_rx_packets = rx_packet_counter;
     assign status_link_quality = link_quality;
+
 
 endmodule
