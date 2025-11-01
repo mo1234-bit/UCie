@@ -1,4 +1,4 @@
-module ucie_ltsm_enhanced #(
+module ucie_ltsm #(
     parameter PACKAGE_TYPE = "ADVANCED",
     parameter MODULE_WIDTH = 64,
     parameter ENABLE_REDUNDANCY = 1
@@ -216,3 +216,4 @@ module ucie_ltsm_enhanced #(
         end
     end
 endmodule
+
