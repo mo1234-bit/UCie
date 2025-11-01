@@ -1,4 +1,4 @@
-module ucie_sideband_enhanced #(parameter ENABLE_REDUNDANCY = 1) (
+module ucie_sideband #(parameter ENABLE_REDUNDANCY = 1) (
     input wire auxclk,
     input wire reset_n,
     input wire [63:0] tx_packet,
@@ -137,3 +137,4 @@ module ucie_sideband_enhanced #(parameter ENABLE_REDUNDANCY = 1) (
     assign sb_tx_data_rd = 1'b0;
     assign sb_tx_clk_rd = 1'b0;
 endmodule
+
