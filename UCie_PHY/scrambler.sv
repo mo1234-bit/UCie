@@ -1,4 +1,4 @@
-odule ucie_scrambler #(parameter WIDTH = 64) (
+module ucie_scrambler #(parameter WIDTH = 64) (
     input wire clk,
     input wire reset_n,
     input wire enable,
@@ -29,3 +29,4 @@ odule ucie_scrambler #(parameter WIDTH = 64) (
         end
     endgenerate
 endmodule
+
